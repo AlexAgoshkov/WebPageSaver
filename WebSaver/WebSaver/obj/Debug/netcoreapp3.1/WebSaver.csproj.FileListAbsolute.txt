@@ -1,0 +1,17 @@
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\bin\Debug\netcoreapp3.1\WebSaver.exe
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\bin\Debug\netcoreapp3.1\WebSaver.deps.json
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\bin\Debug\netcoreapp3.1\WebSaver.runtimeconfig.json
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\bin\Debug\netcoreapp3.1\WebSaver.runtimeconfig.dev.json
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\bin\Debug\netcoreapp3.1\WebSaver.dll
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\bin\Debug\netcoreapp3.1\WebSaver.pdb
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\obj\Debug\netcoreapp3.1\WebSaver.csprojAssemblyReference.cache
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\obj\Debug\netcoreapp3.1\App.g.cs
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\obj\Debug\netcoreapp3.1\WebSaver_MarkupCompile.cache
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\obj\Debug\netcoreapp3.1\WebSaver_MarkupCompile.lref
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\obj\Debug\netcoreapp3.1\WebSaver.g.resources
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\obj\Debug\netcoreapp3.1\WebSaver.AssemblyInfoInputs.cache
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\obj\Debug\netcoreapp3.1\WebSaver.AssemblyInfo.cs
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\obj\Debug\netcoreapp3.1\WebSaver.dll
+D:\Sourse\GitHub\WebPageSaver\WebSaver\WebSaver\obj\Debug\netcoreapp3.1\WebSaver.pdb
