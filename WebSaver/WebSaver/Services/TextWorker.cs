@@ -35,9 +35,16 @@ namespace WebSaver.Services
             {
                 string[] words = text.Split(new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
 
-                for (int i = 2; i < words.Length; i++)
+                if (words.Length == 2)
                 {
-                    result += "/" + words[i];
+                    result = "/";
+                }
+                else
+                {
+                    for (int i = 2; i < words.Length; i++)
+                    {
+                        result += "/" + words[i];
+                    }
                 }
             }
 
