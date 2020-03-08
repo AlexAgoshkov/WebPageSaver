@@ -7,9 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="43,104,0,0" VerticalAlignment="Top" Width="71" Click="Button_Click"/>
-        <TextBox x:Name="_webPage" HorizontalAlignment="Left" Margin="43,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Save" HorizontalAlignment="Left" Margin="43,129,0,0" VerticalAlignment="Top" Width="71" Click="Button_Click"/>
+        <TextBox x:Name="_webPage" HorizontalAlignment="Left" Margin="43,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="417" Height="21"/>
         <Label Content="WebAddres" HorizontalAlignment="Left" Margin="43,36,0,0" VerticalAlignment="Top"/>
-
     </Grid>
 </Window>

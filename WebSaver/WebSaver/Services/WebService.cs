@@ -11,15 +11,22 @@ namespace WebSaver.Services
 {
     public class WebService : IWebService
     {
-        public async Task<string> GetAsync(string addres)
+        public string GetRequest(string address)
+        {
+            string result = $"GET {TextWorker.GetPath(address)} HTTP/1.1\r\nHost: {TextWorker.GetDomain(address)}\r\n\r\n";
+
+            return result;
+        }
+
+        public async Task<string> GetAsync(string address)
         {
             string result = "";
 
-            var message = $"GET / HTTP/1.0\nHost: {addres}\r\n\r\n";
+            var message = GetRequest(address);
             try
             {
                 var port = 80;//19539; //80
-                var serverAddr = addres; //"selin.in.ua"; //"0.tcp.ngrok.io";
+                var serverAddr = TextWorker.GetDomain(address); //"selin.in.ua"; //"0.tcp.ngrok.io";
                 var client = new TcpClient(serverAddr, port);
 
                 var data = Encoding.ASCII.GetBytes(message);
@@ -28,23 +35,11 @@ namespace WebSaver.Services
                 stream.Write(data, 0, data.Length);
                 stream.Flush();
 
-                var responseData = new byte[1024];
+                var responseData = new byte[5024];
                 int bytesRead = await stream.ReadAsync(responseData, 0, responseData.Length);
                 var responseMessage = Encoding.ASCII.GetString(responseData, 0, bytesRead);
 
-                string[] words = responseMessage.Split(new char[] { '\n' });
-
-                for (int i = 0; i < words.Length; i++)
-                {
-                    if (words[i].StartsWith("<!Doctype") || words[i].StartsWith("<!DOCTYPE"))
-                    {
-                        for (int j = i; j < words.Length; j++)
-                        {
-                            result += words[j];
-                        }
-                        break;
-                    }
-                }
+                result = TextWorker.GetBody(responseMessage);
 
                 stream.Close();
                 client.Close();
